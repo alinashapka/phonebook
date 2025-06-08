@@ -8,6 +8,7 @@ export default function RegistrationForm() {
     const dispatch = useDispatch();
 
     const handleSubmit = (values, actions) => {
+        console.log(values);
         dispatch(register(values));
         actions.resetForm();
     };
@@ -17,7 +18,7 @@ export default function RegistrationForm() {
             name: "",
             email: "",
             password: "",
-        }} onSubmit={handleSubmit} className={clsx(css.container)}>
+        }} onSubmit={handleSubmit}>
             <Form className={clsx(css.form)} autoComplete="off">
                 <label className={css.label}>
           Username

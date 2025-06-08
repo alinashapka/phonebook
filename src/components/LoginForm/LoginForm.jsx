@@ -16,7 +16,7 @@ export default function LoginForm() {
         <Formik initialValues={{
             email: "",
             password: "",
-        }} onSubmit={handleSubmit} className={clsx(css.container)}>
+        }} onSubmit={handleSubmit}>
             <Form className={clsx(css.form)} autoComplete="off">
                 <label className={clsx(css.label)}>
                     Email
