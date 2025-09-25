@@ -1,9 +1,23 @@
 .wrapper {
   display: flex;
   justify-content: flex-end;
+  align-items: baseline;
   gap: 10px;
   padding: 0 30px;
 }
 .greeting {
   font-weight: 600;
+}
+.button {
+  border-radius: 12px;
+  padding: 10px 16px;
+  background: #3470ff;
+  border: none;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 300ms ease;
+}
+.button:hover {
+  background-color: #0b44cd;
 }
